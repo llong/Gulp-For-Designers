@@ -1,0 +1,39 @@
+// ************************
+// Import our Sass variables
+// ************************
+@import 'variables';
+
+
+
+// *********************
+// Global Styles
+// *********************
+* { box-sizing: border-box; }
+
+html,body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $dark-text;
+  font-size: $body-text;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+// ************************
+// Import our SCSS partials
+// ************************
+@import 'buttons';
+@import 'forms';
+@import 'navbar';
+@import 'typography';
+@import 'utilities';

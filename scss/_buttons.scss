@@ -1,0 +1,30 @@
+button {
+  border: none;
+  font-size: $body-text;
+}
+
+.btn {
+  padding: .5rem .75rem;
+  border-radius: .25rem;
+
+  &.default {
+    background: $default;
+    color: $dark-text;
+  }
+
+  &.primary {
+    background: $primary;
+    color: $white-text;
+    &:hover {
+      background: darken($primary,10%);
+    }
+  }
+
+  &.accent {
+    background: $accent;
+    color: $white-text;
+    &:hover {
+      background: darken($accent,10%);
+    }
+  }
+}

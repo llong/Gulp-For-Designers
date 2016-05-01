@@ -1,14 +1,13 @@
-/*
- Requirements
-*/
-
 var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
+var sass = require('gulp-sass');
 
-gulp.task('autoprefix', function() {
-  return gulp.src('css/styles.css')
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions']
-    }))
-    .pipe(gulp.dest('css'));
+
+gulp.task('sass', function(){
+  return gulp.src('./scss/**/*.scss')
+  .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+  .pipe(gulp.dest('./css'));
+});
+
+gulp.task('default', function() {
+  gulp.watch('./scss/**/*.scss', ['sass']);
 });

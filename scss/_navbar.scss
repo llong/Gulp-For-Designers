@@ -1,0 +1,11 @@
+.navbar {
+  display: block;
+  height: 3rem;
+  padding: 0 1rem;
+  line-height: 3rem;
+
+  &.bg-primary {
+    background: $primary;
+    color: $white-text;
+  }
+}

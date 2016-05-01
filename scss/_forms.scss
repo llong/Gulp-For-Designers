@@ -1,0 +1,9 @@
+input {
+  -webkit-appearance: none;
+  display: inline-block;
+  height: 2rem;
+  padding: .5rem .75rem;
+  border: 1px solid $default;
+  border-radius: $border-radius;
+  font-size: $body-text;
+}
